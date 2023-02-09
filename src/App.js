@@ -5,9 +5,9 @@ import SignIn from './routes/sign-in/sign-in.component';
 const App = () => {
 
 
-const Shop = () => { 
-  return <h1>This is Shop</h1>
- }
+  const Shop = () => {
+    return <h1>This is Shop</h1>
+  }
 
   return (
     <Routes>
