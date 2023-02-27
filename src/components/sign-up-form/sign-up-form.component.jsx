@@ -30,7 +30,6 @@ const SignUpForm = () => {
       alert("passwords do not match");
       return;
     }
-    console.log("email:", email);
 
     try {
       const { user } = await createAuthUserWithEmailAndPassword(
@@ -44,6 +43,7 @@ const SignUpForm = () => {
       resetFormFields();
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
+        console.log("user creation encountered an error ", error);
         alert("Cannot create user, email already in use");
       } else {
         console.log("user creation encountered an error ", error);
