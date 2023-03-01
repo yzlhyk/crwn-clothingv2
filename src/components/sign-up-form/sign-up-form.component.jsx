@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
@@ -36,6 +36,7 @@ const SignUpForm = () => {
         email,
         password
       );
+
 
       console.log("auth user: ", user);
 
